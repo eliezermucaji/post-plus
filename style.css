@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    width: 100%;
+    height: 100%;
+    gap: 2rem;
+
+}
+
+.container .image-preview {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+}
+
+.image-preview .image-preview-container {
+    width: 25rem;
+    height: 30rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-preview .download-post {
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.616);
+    background-color: rgb(0, 195, 255);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.068) ,rgba(0, 0, 0, 0.842));
+}
+
+.image-preview-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.post-text {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    color: white;
+    font-size: 25px;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    width: 80%;
+    margin-left: 1rem;
+}
+
+.user-infos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 1rem;
+    display: flex;
+    gap: 3px;
+    align-items: center;
+}
+
+.user-infos span {
+    color: white;
+    font-weight: 700;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.671);
+    width: 170px;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    overflow: hidden;
+}
+
+.user-profile-image {
+    width: 50px;
+    height: 50px;
+    border-style: dashed;
+    border-radius: 100%;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.39);
+}
+
+.user-profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.inputs {
+    display: flex;
+    width: 25rem;
+    background-color: rgba(0, 0, 0, 0.274);
+    padding: 10px 5px;
+    border-radius: 20px;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.input-container input, textarea {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.input-container input:focus, textarea:focus {
+    outline: none;
+}
+
+.input-container input {
+    height: 30px;
+}
+
+.input-container textarea {
+    height: 15rem;
+    justify-self: center;
+}

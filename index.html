@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="side-container image-preview">
+            <h2 class="info-text">LIVE PREVIEW</h2>
+            <div class="image-preview-container">
+                <img src="./default-background.png" alt="background-image" class="background-image" id="background-image-location">
+                <div class="overlay-image">
+                    <div class="user-infos">
+                        <div id="user-profile-image" class="user-profile-image">
+                            <img src="./default-background.png" alt="user inside image" id="user-profile-img-inside">
+                        </div>
+                        <span class="user-name">
+                            @<span class="user-name-n">Seu nome aqui</span> 
+                        </span>
+                    </div>
+                    <p class="post-text">
+                        "<span class="innerr-post-text">
+                            Escreva seu post aqui!
+                        </span>"
+                    </p>
+                </div>
+            </div>
+            <div class="download-post">
+                BAIXAR POST
+            </div>
+        </div>
+        <div class="side-container image-inputs">
+            <div class="inputs">
+                <div class="input-container profile-image">
+                    <input type="file" accept="img/*" class="file" id="profile-image">
+                </div>
+                <div class="input-container u-user-name">
+                    <input type="text" name="user-name" id="u-user-name" placeholder="Digite o seu nome">
+                </div>
+                <div class="input-container background-image">
+                    <input type="file" name="background-image" id="background-image">
+                </div>
+                <div class="input-container post-text">
+                    <textarea name="post-description" id="post-description" placeholder="Escreva aqui o te post"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
